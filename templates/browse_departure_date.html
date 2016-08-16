@@ -1,0 +1,7 @@
+<ion-view view-title="Departure Date">
+  <ion-content ng-controller="ExampleController">
+        <div class="row" ng-repeat="browse_departure_date in result">
+           <ion-item class="bar" href="#app/browse_departure_date">{{browse_departure_date.departure}} - {{browse_departure_date.categoryName}}</ion-item>
+        </div>
+    </ion-content>
+</ion-view>
