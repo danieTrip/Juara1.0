@@ -25,7 +25,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 .controller('ExampleController', function($scope, $http) {
  
     $scope.getData = function() {
-        $http.get("http://192.168.0.5/function/api/api.php")
+        $http.get("https://www.juaratravel.com.my/function/api/api.php")
             .success(function(data) {
 				//alert("hahahahahaha");
 				console.log(data);
@@ -82,7 +82,7 @@ $scope.getData =  function(){
       views: {
         'menuContent': {
           templateUrl: 'templates/browse.html',
-		  controller: 'browse'
+		  controller: 'browse_category'
         }
       }
     })

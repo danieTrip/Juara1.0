@@ -34,7 +34,7 @@ angular.module('starter.controllers', [])
   // custom login file
   $scope.submit = function(){
 	  
-	  $ionicLoading.show({template: 'Loading...'});
+	  $ionicLoading.show();
 	  
         var link = 'https://www.juaratravel.com.my/function/api/api.php';
 
@@ -89,10 +89,10 @@ angular.module('starter.controllers', [])
 	}	
 });*/
 
-.controller('browse', function($scope,$http,$ionicLoading) {
+.controller('browse_category', function($scope,$http,$ionicLoading) {
 
   var link = 'https://www.juaratravel.com.my/function/api/browse_umrah.php';
-  $ionicLoading.show({template: 'Loading...'})
+  $ionicLoading.show()
   
   $scope.result = "";
   $http.get(link,{params:{action:'view_category'}})
@@ -115,8 +115,8 @@ angular.module('starter.controllers', [])
 
 .controller('browse_departure', function($scope,$http,$ionicLoading) {
 
-  var link = 'https://www.juaratravel.com.my/api/browse_umrah.php';
-  $ionicLoading.show({template: 'Loading...'})
+  var link = 'https://www.juaratravel.com.my/function/api/browse_umrah.php';
+  $ionicLoading.show()
   $scope.result = "";
   $http.get(link,{params:{action:'view_category_departure'}})
     .success(function(data, status, headers,config){
@@ -138,7 +138,7 @@ angular.module('starter.controllers', [])
 .controller('browse_departure_date', function($scope,$http,$ionicLoading) {
 
   var link = 'https://www.juaratravel.com.my/function/api/browse_umrah.php';
-  $ionicLoading.show({template: 'Loading...'})
+  $ionicLoading.show()
   $scope.result = "";
   $http.get(link,{params:{action:'view_departure_date'}})
     .success(function(data, status, headers,config){
