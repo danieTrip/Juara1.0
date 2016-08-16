@@ -1,0 +1,7 @@
+<ion-view view-title="Pakej Umrah">
+  <ion-content ng-controller="ExampleController">
+        <div class="row" ng-repeat="browse_category in result">
+          <ion-item class="col" href="#/app/browse_umrah">{{browse_category.categoryName}}-{{browse_category.code}}</ion-item>
+        </div>
+    </ion-content>
+</ion-view>
